@@ -42,7 +42,23 @@ int main() {
     //important with size_t it is a unsigned long long int so it cant be negative (Used with caution when in i--) 
     
     //LIMITATION
-    //1.cant use the revers order of the list
+    //1.cant use the revers order of the list in foreach loop
+    //2.cant change the value of the item buy range base(for each loop)
+    //3.but we can change the value by pass the reference  
+    //foreach loop
+
+
+    //update the value using pass by reference
+    for(int& variable :grades){
+        variable += 5;
+    }
+    cout << endl;
+
+    //printing the updated vector
+    for(int variable :grades){
+        cout<< variable << " ";
+    }
+    cout << endl;
 
     return 0;
 }
