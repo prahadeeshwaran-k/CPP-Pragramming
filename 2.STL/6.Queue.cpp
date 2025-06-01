@@ -2,7 +2,7 @@
 #include <queue>
 using namespace std;
 // * https://www.geeksforgeeks.org/queue-cpp-stl/
-// * also used std::stack
+// * also used std::queue
 
 /*
 In C++, queue container follows the FIFO (First In First Out) order of insertion and deletion. According to it, the elements that are inserted first should be removed first. This is possible by inserting elements at one end (called back) and deleting them from the other end (called front) of the data structure.
