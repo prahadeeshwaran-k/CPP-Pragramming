@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+// * https://www.geeksforgeeks.org/vector-in-cpp-stl/
 // * vector is used singly linked list 
 // * also used std::vector
 // * array size can't be change
