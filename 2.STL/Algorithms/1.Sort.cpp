@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 // * Rules for a Valid Comparator
-// * My understand if its return true no change, if false then change
+// * My understand if its return true no change, if false then change  
 // * It must take two arguments of the same type (the type you're comparing).
 // * It must return true if the first argument should come before the second, based on your custom logic.
 // * It must define a strict weak ordering (basically: consistent, no circular logic).
