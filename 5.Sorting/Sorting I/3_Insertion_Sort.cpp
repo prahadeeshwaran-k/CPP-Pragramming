@@ -2,15 +2,41 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int arr[] = { 12, 11, 13, 5, 6 };
-    int n = sizeof(arr) / sizeof(arr[0]);
+void Insertion_Sort(int n,int arr[]){
+    int temp,j;
+    for (int i = 0; i<=n-1 ; i++){
+        j = i;
+        while (j>0 && arr[j-1]>arr[j])
+        {
+            temp = arr[j];
+            arr[j] = arr[j-1];
+            arr[j-1] = temp;
 
-    insertionSort(arr, n);
-    printArray(arr, n);
-
-    return 0;
+            j--;
+        }
+        
+        
+    }
 }
 
-/* This code is contributed by Hritik Shah. */
+int main(){
+    int n;
+    cout << "Enter the Elements of Array :";
+    cin >> n;
+
+    int arr[n];
+    cout <<"Enter the values: ";
+    for(int i=0;i<n;i++){
+        cin >> arr[i];
+    }
+
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+    Insertion_Sort(n,arr);
+    
+    cout<<"\n";
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+}
