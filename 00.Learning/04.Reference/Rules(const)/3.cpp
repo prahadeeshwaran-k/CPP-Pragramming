@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 	int x=10; // non-const existing variable
-	const int &r=x;// const reference          
+	const int &r=x;// const reference  -> is valid
 	//r++;	 //invalid because reference is constant
 	x++;//valid
 	cout<<"x="<<x<<endl;

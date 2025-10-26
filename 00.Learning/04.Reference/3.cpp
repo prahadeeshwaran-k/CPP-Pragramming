@@ -3,9 +3,9 @@
 using namespace std;
 int main()
 {
-	int x=10;
-	int  &r;	
-	  r=x;//invalid
+	int x = 10;
+	int &r;
+	r=x;//invalid
 	cout<<"x="<<x<<endl;
 	cout<<"r="<<r<<endl;
 }

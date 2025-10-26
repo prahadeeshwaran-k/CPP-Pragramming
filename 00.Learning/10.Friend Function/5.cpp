@@ -24,6 +24,7 @@ class husband
 		cout<<"sal="<<sal<<endl;
 		}
 };
+
 class wife
 {
  public:

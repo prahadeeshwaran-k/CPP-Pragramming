@@ -3,8 +3,8 @@
 using namespace std;
 int main()
 {
-	char x='A';
-	int  &r=x;   //} invalid 
+	char x = 'A';
+	int  &r = x;  //} invalid
 	cout<<"x="<<x<<endl;
 	cout<<"r="<<r<<endl;
 }
