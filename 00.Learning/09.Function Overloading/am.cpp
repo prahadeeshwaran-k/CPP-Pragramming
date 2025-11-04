@@ -14,7 +14,7 @@ void sum(int &r)
 int main()
 {
 	int x=10;
-	sum(x);//sum function is called,compiler tries to bind two function
+	sum(x);// sum function is called,compiler tries to bind two function
 	       // definition.compiler gets confused which one is going to execute.
 	       // compiler will generate ambiguity error .
 }
