@@ -1,3 +1,4 @@
+//Generate Error due to the abscent of Reference
 #include<iostream>
 using namespace std;
 class A

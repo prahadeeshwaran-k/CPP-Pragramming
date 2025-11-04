@@ -9,8 +9,6 @@ struct st
 int main()
 {
     const struct st s1 = {10};
-
-
     cout << "using dot operator" << endl;
     cout << "s1.x=" << s1.x << endl;
 

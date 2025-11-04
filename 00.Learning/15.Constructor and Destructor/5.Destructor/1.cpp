@@ -1,25 +1,25 @@
-//constructor and destructor
-#include<iostream>
+// constructor and destructor
+#include <iostream>
 using namespace std;
 class A
 {
 public:
-int x;// data member 
+    int x; // data member
 public:
-A()
-{
-cout<<"default constructor"<<endl;
-cout<<"x="<<x<<endl;
-}
+    A()
+    {
+        cout << "default constructor" << endl;
+        cout << "x=" << x << endl;
+    }
+
 public:
-~A()
-{
-cout<<"destructor"<<endl;
-}
+    ~A()
+    {
+        cout << "destructor" << endl;
+    }
 };
+
 int main()
 {
-A ob1;  
-
+    A ob1;
 }
-
