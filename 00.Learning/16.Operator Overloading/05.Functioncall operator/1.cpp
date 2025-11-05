@@ -1,34 +1,37 @@
 #include<iostream>
-using  namespace std;
+using namespace std;
+
 class A
 {
 private:
-int x;// data member 
+    int x; // data member
 public:
-A()
-{
-cout<<"default constructor"<<endl;
-cout<<"x="<<x<<endl;
-}
-A(int a)
-{
-x=a;
-cout<<"parameterized constructor"<<endl;
-cout<<"x="<<x<<endl;
-}
-void operator()(int j)
-{
-cout<<"function call operator function  is called"<<endl;
-cout<<"j="<<j<<endl;//10
-}
+    A()
+    {
+        cout << "default constructor" << endl;
+        cout << "x=" << x << endl;
+    }
+
+    A(int a)
+    {
+        x = a;
+        cout << "parameterized constructor" << endl;
+        cout << "x=" << x << endl;
+    }
+
+    void operator()(int j)
+    {
+        cout << "function call operator function  is called" << endl;
+        cout << "j=" << j << endl; //10
+    }
 };
+
 int main()
 {
-A ob1;// invoke default constructor
+    A ob1(30); // invoke default constructor
 
- ob1(10);//ob1.operator()(10)
-         // ob1 going to invoke function call operator function
-
+    ob1(10); //ob1.operator()(10)
+    // ob1 going to invoke function call operator function
 }
 
 //NOTE:
