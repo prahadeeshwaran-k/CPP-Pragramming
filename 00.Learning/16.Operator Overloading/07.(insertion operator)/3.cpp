@@ -30,11 +30,11 @@ int main()
     A ob1(10), ob2(20);
     cout << ob1 << ob2; //step1:
     // cout<<ob1;
-    //operator<<(cout,ob1);
+    // operator<<(cout,ob1);
     // it is going to invoke insertion operator
-    //cout
+    // cout
     // step 2:
     // cout<<ob2;
     // operator<<(cout,ob2);
-    //cout
+    // cout
 }
