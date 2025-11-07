@@ -19,7 +19,5 @@ void sum(int &a,int &b) //function definition
 	temp=a;
 	a=b;
 	b=temp;
-	
-
 }
 
