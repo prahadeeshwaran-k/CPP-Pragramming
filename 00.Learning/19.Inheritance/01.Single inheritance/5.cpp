@@ -1,11 +1,12 @@
 //single inheritance
+//the constructor call be like always be a base call 1st
 #include<iostream>
 using namespace std;
 //base class
 class A
 {
 	public:
-	A()
+	A()//1st
 	{
 		cout<<"base class-A default constructor"<<endl;
 	}
@@ -19,7 +20,7 @@ class B:public A
 {
 
 	public:
-	B()  // internally
+	B()  // internally //2nd
 	      // B():A()
 	{
 	cout<<"derived class -B default constructor"<<endl;
@@ -33,7 +34,4 @@ class B:public A
 int main()
 {
 	B b1;
-
-
-
 }
