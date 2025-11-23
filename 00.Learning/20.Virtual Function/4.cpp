@@ -5,7 +5,6 @@ using namespace std;
 class A
 {
 
-
 };
 //derived class
 class B:public A
@@ -22,5 +21,6 @@ int main()
 	B b1;
 	ptr=&b1;
 	ptr->test1();
-
+	// if we try to dereference the base class address pointer type of parent class
+	// the parent call must have the virtual function. else it have error.
 }
