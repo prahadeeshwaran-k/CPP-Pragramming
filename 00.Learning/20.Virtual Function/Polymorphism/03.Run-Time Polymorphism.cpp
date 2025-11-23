@@ -13,11 +13,13 @@ public:
     }
 };
 
+// !! note if the derived have not the implementation of its own virtual function definition.
+// !! it takes the base class function.
 class Dog : public Animal {
 public:
-    void sound() override {
-        cout << "Dog barks" << endl;
-    }
+    //void sound() override {
+    //    cout << "Dog barks" << endl;
+    //}
 };
 
 class Cat : public Animal {
