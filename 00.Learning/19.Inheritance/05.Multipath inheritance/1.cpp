@@ -1,15 +1,20 @@
-//Multipath Inheritance (Diamond inheritance)
+// Multipath Inheritance (Diamond inheritance)
+// it is also known as Hybrid Inheritance.
+// it has both multiple and multilevel Inheritance.
+// this code generate error. because of it have a 2 child class derived a same base class
+// to solve this have virtual function.
+
 #include<iostream>
 using namespace std;
 
-//base class
+// base class
 class A
 {
 public:
     int x;
 };
 
-//derived 1 class
+// derived 1 class
 class B : public A
 {
     //derived 1 class inherits all the properties from base class
@@ -20,7 +25,7 @@ public:
     int y;
 };
 
-//derived 2 class
+// derived 2 class
 class C : public A
 {
     //derived 2 class inherits all the properties from base class
@@ -32,10 +37,10 @@ public:
     int z;
 };
 
-//derived 3 class
+// derived 3 class
 class D : public B, public C
 {
-    //class  D iherits all the properties from both class B and class C
+    //class  D inherits all the properties from both class B and class C
     //internally
     //public:
     //int x;
@@ -62,7 +67,7 @@ int main()
 
 //NOTE:
 //class D inherits all the properties from both class B and class C.
-//it  get two copies of base datamember
+//it  gets two copies of base data member
 
 //if you try to access base class data member,  compiler will produce an error
 //because compiler doesn't know whether to call base class data member either
