@@ -21,7 +21,7 @@ class B : private A
 //derived 2 class
 class C : public B
 {
-    //derived 2 class  cannot inherits all the properties from derived 1 class
+    //derived 2 class  cannot inherit all the properties from derived 1 class
 
 public:
     void print()
