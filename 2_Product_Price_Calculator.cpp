@@ -22,8 +22,6 @@ public:
         this->price = price;
         this->discount  =  discount;
     }
-
-
 };
 
 int main(){
@@ -51,7 +49,5 @@ int main(){
             }
         }
     }
-
     cout << "Cheapest: " << lowest.name << "(Final Price: " << lowest.finial_price << ")" << endl;
-
 }
